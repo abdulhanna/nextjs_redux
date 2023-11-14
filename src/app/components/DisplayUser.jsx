@@ -5,12 +5,13 @@ import { deleteUser } from '../redux/slice'
 import { useDispatch } from 'react-redux'
 
 const DisplayUser = () => {
-  const userData = useSelector((data)=> data.users)
+  const userData = useSelector((data)=> data.userData.users)
   const dispatch= useDispatch()
   // console.log(userData,'adata')
   const removeUser = (id)=>{
         dispatch(deleteUser({id}))
   }
+  // console.log(userData,'data')
   return (
     <div className='border-2 m-4 py-8 pl-8'>
       <h2 className='text-lg font-medium'>Display USer List</h2> 

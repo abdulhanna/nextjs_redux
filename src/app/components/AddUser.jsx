@@ -19,6 +19,7 @@ const AddUser = () => {
         <input className=' border-blue-400 py-1 border-2 rounded' value={name} placeholder='Enter user' onChange={(e)=>setName(e.target.value)}/>
         <button className='bg-blue-500 py-1 px-2 rounded-sm text-white' onClick={handleSubmit}>Add User</button>
         <Link className='underline text-blue-600' href={'/removeUser'}>Reomve user</Link>
+        <Link className='underline text-blue-600' href={'/todolist'}>Go to todo</Link>
       </div>     
     </div>
   )

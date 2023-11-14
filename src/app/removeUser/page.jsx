@@ -5,10 +5,11 @@ import { deleteUser } from '../redux/slice'
 
 const page = () => {
   const dispatch = useDispatch()
-  const userData = useSelector((data)=>data.users)
+  const userData = useSelector((data)=>data.userData.users)
   const removeUser = (id)=>{
         dispatch(deleteUser({id}))
   }
+  console.log(userData,'data')
   return (
     <div className='py-4 px-8'>
       <h2 className='text-2xl font-semibold'>Remove User Page</h2>
